@@ -2,6 +2,7 @@ body {
     margin: 0rem;
     padding: 0rem;
     border: 0rem;
+    background-color: black;
 }
 
 html {
@@ -21,8 +22,11 @@ html {
     transition: all 1s ease;
 }
 
-
 /* Header */
+
+.header__texto{
+    text-align: center;
+}
 
 .header__paralax {
     background-image: url(../img/home-slider-image-1.jpg);
@@ -33,7 +37,75 @@ html {
     background-size: cover;
 }
 
-.header__texto {}
+.header__texto h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.header__texto h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.header__texto h4 {
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.header__texto span {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+hr{
+    border: 1px solid white !important;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.header__boton {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 0%;
+    padding: 12px 70px;
+    letter-spacing: 4px;
+    background-color:#FFFFFF00;
+    border: 1px solid white !important;
+    color: white;
+}
+
+.header__boton:hover {
+    background-color: white!important;
+    border: 1px solid white!important;
+    color: #111111;
+}
 
 .hola {
     height: 4000px;
@@ -43,10 +115,45 @@ html {
 
 /* Newsletter */
 
-.newsletter {
-    padding: 200px 0;
-    background-color: thistle;
-}
+#newsletter {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #newsletter video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  #newsletter .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #newsletter .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+  }
 
 .newsletter__bloque {
     padding: 60px 0;
@@ -87,7 +194,7 @@ html {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     border-radius: 0%;
     padding: 12px 40px;
     letter-spacing: 2px;
@@ -118,6 +225,45 @@ html {
 /* Footer */
 
 footer {
-    height: 300px;
+    height: auto;
     background-color: #191826;
+    color: white;
+    padding: 80px 0;
+}
+
+footer h6{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0 40px 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+footer a{
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        padding: 0px;
+        margin: 0 40px 15px 0;
+        font-weight: 400;
+        color: white;
+}
+
+footer a:visited{
+    color: white;
+}
+
+footer a:hover{
+    color: gray;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+footer p{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0 40px 15px 0;
+    font-weight: 400;
 }
