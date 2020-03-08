@@ -1,0 +1,123 @@
+body {
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+.navbar {
+    /* height: 70px; */
+    color: white!important;
+}
+
+.bg-dark {
+    background-color: black!important;
+    transition: all 1s ease;
+}
+
+
+/* Header */
+
+.header__paralax {
+    background-image: url(../img/home-slider-image-1.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__texto {}
+
+.hola {
+    height: 4000px;
+    background-color: white;
+}
+
+
+/* Newsletter */
+
+.newsletter {
+    padding: 200px 0;
+    background-color: thistle;
+}
+
+.newsletter__bloque {
+    padding: 60px 0;
+    text-align: center;
+    height: auto;
+    width: 40%;
+    background-color: white;
+}
+
+.newsletter__bloque h5 {
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #111111;
+    line-height: 1.2;
+}
+
+.newsletter__bloque h6 {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #111111;
+}
+
+.newsletter__bloque p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #111111;
+}
+
+.newsletter__boton {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0%;
+    padding: 12px 40px;
+    letter-spacing: 2px;
+    background-color: white;
+    border: 1px solid #111 !important;
+    color: #111111;
+}
+
+.newsletter__boton:hover {
+    background-color: #111!important;
+    border: 1px solid #111!important;
+    color: white;
+}
+
+.newsletter__form{
+    margin: 35px 0;
+}
+
+.newsletter__input {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: 12px 50px 12px 12px;
+    border-radius: 0%;
+    border: 1px solid #DCDCDC!important;
+    margin-right: 10px;
+}
+
+/* Footer */
+
+footer {
+    height: 300px;
+    background-color: #191826;
+}
