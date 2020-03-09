@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6a623f2033.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Titulo -->
+    <title>Suscripción - CoffeeNest</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="menu" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <div class="mr-auto">
+                <a class="" href="#">Home</a>
+                <a class="" href="#">Cómo Funciona</a>
+                <a class="" href="#">Club del Café</a>
+            </div>
+
+            <div>
+                <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Iniciar Sesión"><i
+                        class="far fa-user-circle fa-2x mr-n2"></i></a>
+                <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Mis Compras"><i
+                        class="fas fa-shopping-cart fa-2x"></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+    <section id="suscripcion">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/img/video2.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 justify-content-center align-items-center">
+
+                <img class="header__logo" src="assets/img/vector_header.svg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="suscripcion__paralax">
+        <form class="formulario">
+            <h2>Ingresa tus datos</h2>
+            <div class="form-group">
+                <label for="inputAddress">Nombre Completo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Cindy Jeraldo">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Teléfono</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="+56 9 XXXX XXXX">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Mail</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="mi.correo@ejemplo.cl">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Libertador Bernardo O'Higgins">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Número de casa o departamento</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="32B">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Referencia de despacho</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Casa de esquina, dejar con conserje">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Comuna</label>
+                    <select class="form-control">
+                        <option></option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Localidad</label>
+                    <select class="form-control">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail4">¿Cómo quieres pagar?</label>
+                <div class="form-check d-flex">
+                    <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                    <label class="form-check-label formulario__check" for="defaultCheck1">
+                        Pago Recurrente (solo tarjeta de crédito, págaras mes a mes el valor de la suscripción).
+                    </label>
+                </div>
+                <div class="form-check d-flex mt-2">
+                    <input class="form-check-input" type="radio" value="" id="defaultCheck2">
+                    <label class="form-check-label formulario__check mb-1" for="defaultCheck1">
+                        Pre-pago (acepta tarjetas de crédito y débito, pagarás por adelantado los meses de suscripción).
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <h2>Información de Pago</h2>
+            <div class="d-flex">
+                <div class="margen__r">
+                    <label for="">Resumen de Envío</label>
+                    <p>Suscripción Clásica pago recurrente</p>
+                    <p>Destinatario: <span class="ml-2">Cindy Jeraldo</span></p>
+                    <p>Dirección: <span class="ml-2">Liber. Bernando O'Higgins 815, Santiago</span></p>
+                </div>
+                <div class="">
+                    <label for="">Total Orden de Compra</label>
+                    <p>Caja Marzo: <span class="ml-2">$11.990</span></p>
+                    <p>Despacho Marzo: <span class="ml-2">$0</span></p>
+                    <p>Total: <span class="ml-2">$11.990</span></p>
+                </div>
+            </div>
+            <div class="">
+                <p class="mt-5" style="color: #111111; font-size: 13px; font-weight: 700;">Recuerda: Debes suscribirte a
+                    la Suscripción Clásica con modalidad de pago recurrente (cargo a tu tarjeta de crédito) para acceder
+                    a la promoción y recibir tus dos vinitos de regalo junto a tu primera caja. Promoción no aplica para
+                    suscriptores actuales y/o activos en los últimos 12 meses.</p>
+            </div>
+            <div class="form-check d-flex my-4">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label formulario__check" for="defaultCheck1">
+                    He leído y acepto los <a href="#">términos y condiciones</a>.
+                </label>
+              </div>
+            <button type="submit" class="btn btn-primary">Pagar</button>
+            <hr>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+
+                <div class="d-flex">
+                    <div class="d-flex flex-column">
+                        <h6>Siguenos</h6>
+                        <div class="d-flex">
+                            <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-instagram ml-n3 fa-2x"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <h6 href="#">Contacto</h6>
+                        <a href="#">hola@coffeenest.cl</a>
+                        <a href="#">+56 9 1234 5678</a>
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <h6>Coffenest</h6>
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Términos y condiciones</a>
+                        <a href="#" class="mb-n1">Políticas de Despacho</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-right">© 2020 Coffee Nest.</p>
+                    <p class="text-right mt-n2">All rights reserved.</p>
+                </div>
+
+            </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Navbar -->
+    <script>
+        $(window).scroll(function () {
+            if ($("#menu").offset().top > 100) {
+                $("#menu").addClass("bg-dark");
+            } else {
+                $("#menu").removeClass("bg-dark");
+            }
+        });
+    </script>
+
+    <!-- Tooltip -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</body>
+
+</html>

@@ -23,27 +23,22 @@
 
 <body>
     <!-- Navbar -->
-    <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Como Funciona</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Club del Café</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav my-2 my-lg-0">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-                    <button class="btn btn-light my-2 my-sm-0" type="submit">Suscribirse</button>
-                </ul>
+    <nav id="menu" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <div class="mr-auto">
+                <a class="" href="#">Home</a>
+                <a class="" href="#">Cómo Funciona</a>
+                <a class="" href="#">Club del Café</a>
             </div>
+
+            <div>
+                <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Iniciar Sesión"><i
+                        class="far fa-user-circle fa-2x mr-n2"></i></a>
+                <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Mis Compras"><i
+                        class="fas fa-shopping-cart fa-2x"></i></a>
+            </div>
+
         </div>
     </nav>
     <!-- End Navbar -->
@@ -52,19 +47,29 @@
     <header class="header__paralax d-flex justify-content-center align-items-center">
         <div class="header__texto">
             <img class="header__logo" src="assets/img/vector_header.svg" alt="">
-            <h2>SUSCRÍBETE</h2>
-            <hr>
-            <h3>DESDE</h3>
-            <h4>$7.990 <span>/AL MES</span></h4>
-            <h3>y sé parte de nuestro club</h3>
-            <hr>
-            <button type="button" class="btn btn-outline-light header__boton">Aquí</button>
+            <div class="mb-4 mt-5">
+                <h2>SUSCRÍBETE</h2>
+                <hr class="">
+                <h4><span>desde</span> $7.990 <span>/AL MES</span></h4>
+                <span>y sé parte de nuestro club</span>
+            </div>
+            <button type="button" href="" class="btn btn-outline-light header__boton">Aquí</button>
         </div>
     </header>
 
+<!-- Club de Café -->
+    <section class="club__paralax">
 
 
-    <div class="hola"></div>
+
+
+
+
+
+    </section>
+
+
+
 
     <!-- Suscribete -->
     <section id="newsletter">
@@ -95,8 +100,10 @@
                 <div class="d-flex">
                     <div class="d-flex flex-column">
                         <h6>Siguenos</h6>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <div class="d-flex">
+                            <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-instagram ml-n3 fa-2x"></i></a>
+                        </div>
                     </div>
 
                     <div class="d-flex flex-column">
@@ -123,11 +130,6 @@
 
     </footer>
 
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -143,13 +145,23 @@
     <!-- Script Navbar -->
     <script>
         $(window).scroll(function () {
-            if ($("#menu").offset().top > 250) {
+            if ($("#menu").offset().top > 100) {
                 $("#menu").addClass("bg-dark");
             } else {
                 $("#menu").removeClass("bg-dark");
             }
         });
     </script>
+
+    <!-- Tooltip -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    
+
 </body>
 
 </html>
