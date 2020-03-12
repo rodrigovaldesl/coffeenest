@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Tipografías -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6a623f2033.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
@@ -26,39 +26,117 @@
     <nav id="menu" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <div class="mr-auto">
-                <a class="" href="#">Home</a>
-                <a class="" href="#">Cómo Funciona</a>
-                <a class="" href="#">Club del Café</a>
+            <div class="">
+                <!-- <a class="" href="#">Home</a> -->
+                <a href="#"><img style="height: 35px; width: auto;" src="assets/img/logo_cafe.png" alt=""></a>
+                <a class="" href="#">¿Cómo Funciona?</a>
+                <a class="" href="#club">Club del Café</a>
             </div>
 
-            <div>
-                <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Iniciar Sesión"><i
-                        class="far fa-user-circle fa-2x mr-n2"></i></a>
-                <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Mis Compras"><i
-                        class="fas fa-shopping-cart fa-2x"></i></a>
+            <div class="ml-auto">
+                <a href="" class="" data-toggle="tooltip" data-placement="bottom" title="Iniciar Sesión"><img
+                        style="height: 25px; width: auto; margin-right: -20px;" src="assets/img/usuario.svg" alt=""></a>
+
+                <a href="" data-toggle="tooltip" data-placement="bottom" title="Mis Compras"><img
+                        style="height: 25px; width: auto;" src="assets/img/carro.svg" alt=""></a>
             </div>
 
+        </div>
+        <div class="container">
+            <hr style="border-bottom: 0.5px solid #FFFFFF; margin: 15px 0 0 0;">
         </div>
     </nav>
     <!-- End Navbar -->
 
     <!-- Header -->
-    <header class="header__paralax d-flex justify-content-center align-items-center">
-        <div class="header__texto">
-            <img class="header__logo" src="assets/img/vector_header.svg" alt="">
-            <div class="mb-4 mt-5">
-                <h2>SUSCRÍBETE</h2>
-                <hr class="">
-                <h4><span>desde</span> $7.990 <span>/AL MES</span></h4>
-                <span>y sé parte de nuestro club</span>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!-- Imagenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="navbar__slider-img1" alt="First slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="navbar__slider-img2" alt="Second slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="navbar__slider-img3" alt="Third slide"></div>
+                </div>
             </div>
-            <button type="button" href="" class="btn btn-outline-light header__boton">Aquí</button>
+            <!-- Descripción -->
+            <div class="carousel-caption d-none d-md-block">
+
+                <div class="header__texto mb-4">
+                    <div class="mb-4 mt-5">
+                        <img style="height: 180px; width: auto; margin-bottom: 40px;" src="assets/img/vector_header.svg"
+                            alt="">
+                        <h2>SUSCRÍBETE</h2>
+                        <h2><span>desde</span> $7.990 <span>/AL MES</span></h2>
+                        <span>y sé parte de nuestro club</span>
+                    </div>
+                    <a href="suscripcion.html"><button type="button" href="" class="btn btn-outline-light header__boton">Aquí</button></a>
+                </div>
+
+            </div>
+            <!-- Controles -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </header>
+    <!-- End Header -->
 
-<!-- Club de Café -->
-    <section class="club__paralax">
+    <!-- Club de Café -->
+    <section id="club" class="club__paralax d-flex">
+
+        <div class="club__imagen"></div>
+        <div class="club__texto d-flex align-items-center">
+            <div style="margin-left: 80px;">
+                <h3>COFFEENEST <br><span style="font-weight: 400;">EL CLUB DEL CÁFE</span></h3>
+
+                <div class="d-flex">
+                    <img style=";" src="assets/img/icon-1.svg" alt="">
+                    <div style="margin-left: 45px;">
+                        <h2>Prueba distintos vinos</h2>
+                        <p>Conoce nuevas viñas, cepas, <br>valles y estilos.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <img style=";" src="assets/img/icon-2.svg" alt="">
+                    <div style="margin-left: 45px;">
+                        <h2>Paga lo justo</h2>
+                        <p>Los mejores precios, desde <br>$ 7.990 al mes.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <img style="" src="assets/img/icon-3.svg" alt="">
+                    <div style="margin-left: 45px;">
+                        <h2>No te muevas de la casa</h2>
+                        <p>Despachamos a todo Chile. <br>Gratis en Santiago.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <img style="" src="assets/img/icon-4.svg" alt="">
+                    <div class="" style="margin-left: 45px;">
+                        <h2>No te amarramos</h2>
+                        <p>Congela o cancela tu <br>suscripción cuando quieras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -67,6 +145,7 @@
 
 
     </section>
+
 
 
 
@@ -84,7 +163,7 @@
                     <h6>Recibe en tu mail novedades y ofertas especiales.</h6>
                     <div class="newsletter__form">
                         <input type="text" class="newsletter__input" placeholder="mail@ejemplo.cl">
-                        <button type="submit" class="btn btn-primary newsletter__boton">Ir</button>
+                        <button href="evento01.html" type="submit" class="btn btn-primary newsletter__boton">Ir</button>
                     </div>
                     <p>Nosotros respetaremos tu privacidad.</p>
                 </div>
@@ -145,7 +224,7 @@
     <!-- Script Navbar -->
     <script>
         $(window).scroll(function () {
-            if ($("#menu").offset().top > 100) {
+            if ($("#menu").offset().top > 50) {
                 $("#menu").addClass("bg-dark");
             } else {
                 $("#menu").removeClass("bg-dark");
@@ -160,7 +239,7 @@
         })
     </script>
 
-    
+
 
 </body>
 
