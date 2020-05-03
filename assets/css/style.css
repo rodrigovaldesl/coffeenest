@@ -11,12 +11,12 @@ html {
 /* Navbar */
 
 .bg-dark {
-    background-color: #1C1C1C!important;
+    background-color: #988f85!important;
     transition: all 1s ease;
 }
 
 nav{
-    padding: 20px 0;
+    padding: 17px 0;
 }
 
 nav i{
@@ -28,9 +28,9 @@ nav i:visited{
     }
     
     nav i:hover{
-    color: gray;
+    color: #3a3633;
     text-decoration: none;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     }
 
 nav a{
@@ -49,23 +49,14 @@ color: white;
 }
 
 nav a:hover{
-color: gray;
+color: #3a3633;
 text-decoration: none;
-transition: all 1s ease;
+transition: all 0.5s ease;
 }
 
 /* Header */
 
 .navbar__slider-img1{
-    background-image: url(../img/home-slider-image-4.jpg);
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.navbar__slider-img2{
     background-image: url(../img/home-slider-image-1.jpg);
     height: 100%;
     width: 100%;
@@ -74,8 +65,17 @@ transition: all 1s ease;
     background-repeat: no-repeat;
 }
 
-.navbar__slider-img3{
+.navbar__slider-img2{
     background-image: url(../img/home-slider-image-2.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar__slider-img3{
+    background-image: url(../img/home-slider-image-3.jpg);
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -93,35 +93,35 @@ transition: all 1s ease;
 }
 
 .header__texto h2 {
-    margin: 10px 0;
+    margin: 0;
     padding: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: white;
-}
-
-.header__texto h4 {
-    margin: 10px 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
     color: white;
 }
 
 .header__texto span {
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.header__texto h5 {
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
     color: white;
 }
 
@@ -140,14 +140,14 @@ hr{
     padding: 20px 70px;
     letter-spacing: 4px;
     background-color:#FFFFFF00;
-    border: 1px solid white !important;
+    border: 1.5px solid white !important;
     color: white;
 }
 
 .header__boton:hover {
-    background-color: white!important;
-    border: 1px solid white!important;
-    color: #111111;
+    background-color: #f27e88!important;
+    border: 1.5px solid #f27e88!important;
+    color: white;
 }
 
 /* Club del Café */
@@ -182,7 +182,7 @@ hr{
     font-size: 13px;
     font-weight: 900;
     color: #111;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin: 0 0 8px 0;
     padding: 0;
 }
@@ -230,7 +230,7 @@ hr{
   
   #newsletter video {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -330,7 +330,7 @@ hr{
 
 footer {
     height: auto;
-    background-color: #191826;
+    background-color: #988f85;
     color: white;
     padding: 80px 0;
 }
@@ -359,9 +359,9 @@ footer a:visited{
 }
 
 footer a:hover{
-    color: gray;
+    color: #3a3633;
     text-decoration: none;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 footer p{
@@ -527,4 +527,58 @@ footer p{
 
     .margen__r{
         margin-right: 180px;
+    }
+
+    /* Como Funciona */
+    .funciona{
+        text-align: center;
+        padding: 0 150px;
+    }
+
+
+    #comofunciona{
+        height: auto;
+    }
+
+    #comofunciona img{
+        height: 200px;
+        width: auto;
+    }
+
+    #comofunciona h1{
+        margin: 100px 0;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #111111;
+        line-height: 1.2;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #comofunciona h2{
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 13px;
+        font-weight: 900;
+        color: #111;
+        letter-spacing: 2px;
+        line-height: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    #comofunciona span{
+        font-weight: 400;
+    }
+
+    #comofunciona p{
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+        margin: 0 0 30px 0;
+        padding: 0;
     }
